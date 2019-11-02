@@ -1,0 +1,26 @@
+///internship
+
+title
+
+organization name
+ 
+location
+
+start date
+duration
+stipend
+posted on
+apply by
+workinghrs(full time or parttime)
+
+
+
+
+///on opening internship
+
+same as above +
+about the organization
+about the internship
+skills
+who can apply
+perks

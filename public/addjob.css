@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.navbar{
+    display: flex;
+    height: 10vh;
+    min-height: 20px;
+    background: #f0f0f0;
+    text-transform: capitalize;
+}
+.logo{
+    width: 40%;
+    padding: 0.5em;
+    font-size: 2rem;
+    /* text-align: center; */
+    padding-left: 5.5em;
+    font-weight: 600;
+    color: #333;
+}
+.intern{
+    color: skyblue;
+}
+.nav-list{
+    width: 60%;
+}
+.nav-list ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.6rem;
+}
+.nav-list a{
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+}
+.nav-list a:hover{
+    color: #000;
+    font-weight: 525;
+}
+.nav-list li{
+    list-style: none;
+}
+
+/* -------------addjob-form---------------- */
+.main{
+    background: url('/images/background2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.main form{
+    display: inline-block;
+    width: 25%;
+    min-width: 500px;
+    padding: 2em;
+    border: 1px solid #444;
+    margin: 2em 10em;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), #fff;
+    border: 2px solid #11e;
+    border-radius: 3px;
+    box-shadow: 10px 10px 4px rgba(0,0,0,0.5);
+}
+.login-logo p,.login-logo h2{
+    text-align: center;
+    color: darkblue;
+}
+.login-logo p{
+    font-size: 5rem;
+}
+form label, input, button, form a{
+    display: block;
+    width: 100%;
+    margin-top: 0.5em;
+    font-size: 1.2rem;
+}
+form input,form textarea, form select{
+    padding: 0.3em;
+    background: #eee;
+}
+form input:focus,form textarea:focus, form select:focus{
+    background: #fff;
+}
+form button{
+    border: none;
+    outline: none;
+    padding: 0.5em;
+    background: #11e;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+form button:hover{
+    background: darkblue;
+    border-radius: 30px;
+    font-weight: 600;
+}
+form textarea{
+    padding: 0.3em;
+    font-size: 1rem;
+}
+form select{
+    width: 50%;
+    height: 35px;
+}
+
+
+
+/* -----------------footer-------------- */
+
+
+.footer-head{
+    background: #444;
+    display: flex;
+    color: #fff;
+    font-size: 0.8rem;
+    justify-content: space-evenly;
+    padding: 2em;
+    padding-left: 3em;
+    padding-right: 1em;
+}
+.footer-head li{
+    list-style: none;
+}
+.footer-head .content{
+    width: 20%;
+}
+
+.footer-bottom{
+    background: #222;
+    padding: 0.5em;
+}
+.footer-bottom p{
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+}
+.footer-bottom p span{
+    color: lightblue;
+}
+

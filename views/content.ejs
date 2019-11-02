@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Internship</title>
+    <link rel="stylesheet" href="/content.css">
+</head>
+<body>
+    <!-- --------------navbar--------------------- -->
+    <div class="navbar">
+            <div class="logo">Hello<span class="intern">Intern</span></div>
+            <div class="nav-list">
+                <ul>
+                    <a href="/"><li>Home</li></a>
+                    <a href="/content"><li>internship</li></a>
+                    <a href="/about"><li>about</li></a>
+                    <% if(loginId == 'false'){%>
+                    <a href="/login"><li>login</li></a>
+                    <a href="/register"><li>SignUp</li></a>
+                    <%}else{ %>
+                    <a href="/addjob"><li>Add job</li></a>
+                    <a href="/logout"><li>LogOut</li></a>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+
+<!-- -------------------content---------------------- -->
+<div class="main">
+        <div class="content-list">
+
+
+<!-- ------------content-start----------------- -->
+            <% for(let i of data){ %>
+            <div class="content">
+                <div class="designation"><%= i.designation %></div>
+                <div class="organisation"><%= i.organization %></div>
+                <div class="location">
+                    <p class="title">Location(s): <span class="value"><%= i.location %></span></p>
+                </div>
+                <div class="about-job">
+                    <div class="start-date">
+                        <p class="title">start Date</p>
+                        <p class="value">Immediately</p>
+                    </div>
+                    <div class="duration">
+                        <p class="title">Duration</p>
+                        <p class="value"><%= i.duration %> months</p>
+                    </div>
+                    <div class="stipend">
+                        <p class="title">Stipend</p>
+                        <p class="value">RS. <%= i.stipend %>/month</p>
+                    </div>
+                    <div class="posted-on">
+                        <p class="title">Posted On</p>
+                        <p class="value"><%= i.postedOn %></p>
+                    </div>
+                    <div class="apply-by">
+                        <p class="title">Apply By</p>
+                        <p class="value"><%= i.applyBy %></p>
+                    </div>
+                </div>
+                <div class="more-about-job">
+                    <div class="job-time">Full Time</div>
+                    <a href="/internship/<%=i._id%>"><div class="view-more">view details >></div></a>
+                </div>
+            </div>
+            <% } %>
+
+
+            <!-- -------------------end-of-content---------- -->
+           
+
+        </div>
+    </div>
+
+
+
+    <!-- ------------footer------------ -->
+    <div class="footer-head">
+            <div class="content">
+                <h2>Internships by places</h2>
+                <ul>
+                    <li>Internship in India</li>
+                    <li>Internship in Delhi</li>
+                    <li>Internship in Bangalore</li>
+                    <li>Internship in Hyderabad</li>
+                    <li>Internship in Mumbai</li>
+                    <li>Internship in Chennai</li>
+                    <li>Internship in Gurgaon</li>
+                    <li>Internship in Kolkata</li>
+                    <li>Virtual internship</li>
+                </ul>
+            </div>
+            <div class="content">
+                <h2>Internship by Stream</h2>
+                <ul>
+                    <li>Computer Science Internship</li>
+                    <li>Electronics Internship</li>
+                    <li>Mechanical Internship</li>
+                    <li>Civil Internship</li>
+                    <li>Marketing Internship</li>
+                    <li>Chemical Internship</li>
+                    <li>Finance Internship</li>
+                    <li>Summer Research Fellowship</li>
+                    <li>Campus Ambassador Program</li>
+                </ul>
+            </div>
+            <div class="content">
+                <h2>Online Winter Trainings</h2>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Android App Development</li>
+                    <li>Programming with Python</li>
+                    <li>Data Science</li>
+                    <li>Ethical Hacking</li>
+                    <li>Core Java</li>
+                    <li>Digital Marketing</li>
+                    <li>Advance Excel</li>
+                    <li>Programming with C & C++</li>
+                </ul>
+            </div>
+            <div class="content">
+                <h2>About Internshala</h2>
+                <ul>
+                    <li>About us</li>
+                    <li>We're hiring</li>
+                    <li>Hire interns for your company</li>
+                    <li>Team Diary</li>
+                    <li>Blog</li>
+                    <li>Our Services</li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+         </div>
+    
+    
+         <div class="footer-bottom">
+             <p>
+                &copy; Hello<span>Intern</span> pvt. limited
+             </p>
+         </div>
+
+    
+</body>
+</html>

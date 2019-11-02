@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/addjob.css">
+</head>
+<body>
+    <!-- --------------navbar--------------------- -->
+        <div class="navbar">
+                <div class="logo">Hello<span class="intern">Intern</span></div>
+                <div class="nav-list">
+                    <ul>
+                        <a href="/"><li>Home</li></a>
+                        <a href="/content"><li>internship</li></a>
+                        <a href="/about"><li>about</li></a>
+                        <a href="/addjob"><li>Add job</li></a>
+                        <a href="/logout"><li>LogOut</li></a>
+                    </ul>
+                </div>
+            </div>
+            <!-- ----------------add-job-------------------- -->
+            <div class="main">
+                <form action="/addjob" method="POST">
+                    <label for="organization">Organization Name:</label>
+                    <input type="text" name="organization" id="organization">
+                    <label for="designation">Designation:</label>
+                    <input type="text" name="designation" id="designation">
+                    <label for="location">Location:</label>
+                    <input type="text" name="location" id="location">
+                    <label for="duration">Duration(in months):</label>
+                    <select name="duration" id="duration">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <label for="stipend">Stipend:</label>
+                    <input type="text" name="stipend" id="stipend">
+                    <label for="applyBy">Apply By:</label>
+                    <input type="date" name="applyBy" id="applyBy">
+                    <label for="aboutOrganization">About Organization:</label>
+                    <textarea name="aboutOrganization" id="aboutOrganization" cols="60" rows="5">AnyThing about your Organization</textarea>
+                    <label for="aboutInternship">About Intership:</label>
+                    <textarea name="aboutInternship" id="aboutInternship" cols="60" rows="5">AnyThing about your Internship</textarea>
+                    <label for="noOfInternship">No. of Internship:</label>
+                    <select name="noOfInternship" id="noOfInternship">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <label for="skills">Skills Required:</label>
+                    <input type="text" name="skills" id="skills">
+                    <label for="whoCanApply">Who can apply for the Internship:</label>
+                    <textarea name="whoCanApply" id="whoCanApply" cols="60" rows="5">Who can apply for the job</textarea>
+                    <label for="perks">Perks:</label>
+                    <input type="text" name="perks" id="perks">
+                    <button type="submit">Add Job</button>
+                </form>
+            </div>
+
+        <!-- ------------footer------------ -->
+        <div class="footer-head">
+                <div class="content">
+                    <h2>Internships by places</h2>
+                    <ul>
+                        <li>Internship in India</li>
+                        <li>Internship in Delhi</li>
+                        <li>Internship in Bangalore</li>
+                        <li>Internship in Hyderabad</li>
+                        <li>Internship in Mumbai</li>
+                        <li>Internship in Chennai</li>
+                        <li>Internship in Gurgaon</li>
+                        <li>Internship in Kolkata</li>
+                        <li>Virtual internship</li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <h2>Internship by Stream</h2>
+                    <ul>
+                        <li>Computer Science Internship</li>
+                        <li>Electronics Internship</li>
+                        <li>Mechanical Internship</li>
+                        <li>Civil Internship</li>
+                        <li>Marketing Internship</li>
+                        <li>Chemical Internship</li>
+                        <li>Finance Internship</li>
+                        <li>Summer Research Fellowship</li>
+                        <li>Campus Ambassador Program</li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <h2>Online Winter Trainings</h2>
+                    <ul>
+                        <li>Web Development</li>
+                        <li>Android App Development</li>
+                        <li>Programming with Python</li>
+                        <li>Data Science</li>
+                        <li>Ethical Hacking</li>
+                        <li>Core Java</li>
+                        <li>Digital Marketing</li>
+                        <li>Advance Excel</li>
+                        <li>Programming with C & C++</li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <h2>About Internshala</h2>
+                    <ul>
+                        <li>About us</li>
+                        <li>We're hiring</li>
+                        <li>Hire interns for your company</li>
+                        <li>Team Diary</li>
+                        <li>Blog</li>
+                        <li>Our Services</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy</li>
+                        <li>Contact us</li>
+                    </ul>
+                </div>
+             </div>
+        
+        
+             <div class="footer-bottom">
+                 <p>
+                    &copy; Hello<span>Intern</span> pvt. limited
+                 </p>
+             </div>
+</body>
+</html>

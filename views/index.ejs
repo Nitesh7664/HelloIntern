@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello-Intern</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+        <div class="navbar">
+            <div class="logo">Hello<span class="intern">Intern</span></div>
+            <div class="nav-list">
+                <ul>
+                    <a href="/"><li>Home</li></a>
+                    <a href="/content"><li>internship</li></a>
+                    <a href="/about"><li>about</li></a>
+                    <% if(loginId == 'false'){ %>
+                    <a href="/login"><li>login</li></a>
+                    <a href="/register"><li>SignUp</li></a>
+                    <% }else{ %>
+                    <a href="/addjob"><li>Add job</li></a>
+                    <a href="/logout"><li>LogOut</li></a>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+
+    <!-- -------------slider----------------- -->
+
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="./images/job1.jpg">
+          <div class="text">Caption Text</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="./images/job2.jpg">
+          <div class="text">Caption Two</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="./images/job4.jpg">
+          <div class="text">Caption Three</div>
+        </div>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</div>
+
+
+    <!-- ------------cities--------------->
+    <div class="cities-india">
+        <div class="cityHeading"><h1>Internship in popular cities</h1></div>
+        
+        <div class="cities">
+            <a href="/content/chennai">
+                <div class="cities-content cities1">
+                    <img src="/images/chennai.jpg">
+                    <p>Chennai</p>
+                </div>
+            </a>
+            <a href="/content/delhi">
+                <div class="cities-content cities2">
+                    <img src="/images/delhi.jpg">
+                    <p>Delhi</p>
+                </div>
+            </a>
+            <a href="/content/kolkata">
+                <div class="cities-content cities3">
+                    <img src="/images/kolkata.jpg">
+                    <p>Kolkata</p>
+                </div>
+            </a>
+            <a href="/content/mumbai">
+                <div class="cities-content cities4">
+                    <img src="/images/Mumbai.jpg">
+                    <p>Mumbai</p>
+                </div>
+            </a>
+            <a href="/content/bangalore">
+                <div class="cities-content cities5">
+                    <img src="/images/Bangalore.webp">
+                    <p>Bangalore</p>
+                </div>
+            </a>
+            <a href="/content/hyderabad">
+                <div class="cities-content cities6">
+                    <img src="/images/Hyderabad.jpg">
+                    <p>Hyderabad</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="more" onclick="alert('server busy.......try again later')"><p>View more cities we are in >></p></div>
+
+
+
+
+
+    <!-- ---------------courses-------------->
+
+    <div class="courses--section">
+        <div class="cityHeading"><h1>Internship in popular courses</h1></div>
+        <div class="courses-content">
+            <div class="cities city-courses">
+                <a href="#">
+                    <div class="cities-content cities1 course">
+                        <img src="/images/web.png">
+                        <p>web development</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="cities-content cities2 course">
+                        <img src="/images/python.jpg">
+                        <p>Python</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="cities-content cities3 course">
+                        <img src="/images/ml.png">
+                        <p>machine learning</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="cities-content cities4 course">
+                        <img src="/images/digitalmarketing.jpg">
+                        <p>'digital marketing</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="cities-content cities5 course">
+                        <img src="/images/ai.jpg">
+                        <p>Artificial Intelligence</p>
+                    </div>
+                </a>
+            </div>
+            <div class="more" onclick="alert('we are working on the site')"><p>View more Courses that we offer >></p></div>
+        </div>
+    </div>
+
+
+
+
+    <!-- --------------articles----------------->
+
+    <div class="articles">
+        <h1>Top articles of the month</h1>
+
+        <div class="article article1">
+            <div class="article-image"><img src="/images/article_1.png" alt=""></div>
+            <div class="article-data"><p>We provide Internship as per the needs of the intern</p></div>
+        </div>
+        <div class="article article2">
+            <div class="article-image"><img src="/images/article_2.png" alt=""></div>
+            <div class="article-data"><p>we do have have resume courses for you</p></div>
+        </div>
+        <div class="article article3">
+            <div class="article-image"><img src="/images/article_3.png" alt=""></div>
+            <div class="article-data"><p>we provide help to takle interview queries</p></div>
+        </div>
+        <div class="article article4">
+            <div class="article-image"><img src="/images/article_4.png" alt=""></div>
+            <div class="article-data"><p>we want you to love your work</p></div>
+        </div>
+
+    </div>
+    <div class="more" onclick="alert('server busy....try after sometime')"><p>View more articles >></p></div>
+
+
+
+    <!-- ------------footer------------ -->
+    <div class="footer-head">
+        <div class="content">
+            <h2>Internships by places</h2>
+            <ul>
+                <li>Internship in India</li>
+                <li>Internship in Delhi</li>
+                <li>Internship in Bangalore</li>
+                <li>Internship in Hyderabad</li>
+                <li>Internship in Mumbai</li>
+                <li>Internship in Chennai</li>
+                <li>Internship in Gurgaon</li>
+                <li>Internship in Kolkata</li>
+                <li>Virtual internship</li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Internship by Stream</h2>
+            <ul>
+                <li>Computer Science Internship</li>
+                <li>Electronics Internship</li>
+                <li>Mechanical Internship</li>
+                <li>Civil Internship</li>
+                <li>Marketing Internship</li>
+                <li>Chemical Internship</li>
+                <li>Finance Internship</li>
+                <li>Summer Research Fellowship</li>
+                <li>Campus Ambassador Program</li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Online Winter Trainings</h2>
+            <ul>
+                <li>Web Development</li>
+                <li>Android App Development</li>
+                <li>Programming with Python</li>
+                <li>Data Science</li>
+                <li>Ethical Hacking</li>
+                <li>Core Java</li>
+                <li>Digital Marketing</li>
+                <li>Advance Excel</li>
+                <li>Programming with C & C++</li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>About Internshala</h2>
+            <ul>
+                <li>About us</li>
+                <li>We're hiring</li>
+                <li>Hire interns for your company</li>
+                <li>Team Diary</li>
+                <li>Blog</li>
+                <li>Our Services</li>
+                <li>Terms & Conditions</li>
+                <li>Privacy</li>
+                <li>Contact us</li>
+            </ul>
+        </div>
+     </div>
+
+
+     <div class="footer-bottom">
+         <p>
+            &copy; Hello<span>Intern</span> pvt. limited
+         </p>
+     </div>
+
+
+
+
+
+
+    <script>
+        var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 3500); // Change image every 2 seconds
+}
+    </script>
+</body>
+</html>

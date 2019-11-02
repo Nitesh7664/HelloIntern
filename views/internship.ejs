@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Internship</title>
+    <link rel="stylesheet" href="/internship.css">
+</head>
+<body>
+    <!-- --------------navbar--------------------- -->
+    <div class="navbar">
+            <div class="logo">Hello<span class="intern">Intern</span></div>
+            <div class="nav-list">
+                <ul>
+                    <a href="/"><li>Home</li></a>
+                    <a href="/content"><li>internship</li></a>
+                    <a href="/about"><li>about</li></a>
+                    <a href="/addjob"><li>Add job</li></a>
+                    <a href="/logout"><li>LogOut</li></a>
+                </ul>
+            </div>
+        </div>
+
+<!-- -------------------content---------------------- -->
+<div class="main">
+        <div class="content-list">
+
+
+<!-- ------------content-start----------------- -->
+            <div class="content">
+                <div class="designation"><%= data.designation %></div>
+                <div class="organisation"><%= data.organization %></div>
+                <div class="location">
+                    <p class="title">Location(s): <span class="value"><%= data.location %></span></p>
+                </div>
+                <div class="about-job">
+                    <div class="start-date">
+                        <p class="title">start Date</p>
+                        <p class="value">Immediately</p>
+                    </div>
+                    <div class="duration">
+                        <p class="title">Duration</p>
+                        <p class="value"><%= data.duration %> months</p>
+                    </div>
+                    <div class="stipend">
+                        <p class="title">Stipend</p>
+                        <p class="value">Rs.<%= data.stipend %>/month</p>
+                    </div>
+                    <div class="posted-on">
+                        <p class="title">Posted On</p>
+                        <p class="value"><%= data.postedOn %></p>
+                    </div>
+                    <div class="apply-by">
+                        <p class="title">Apply By</p>
+                        <p class="value"><%= data.applyBy %></p>
+                    </div>
+                </div>
+                <div class="more-about-job">
+                    <div class="job-time">Full Time</div>
+                </div>
+            </div>
+
+            <!-- /////////////////content-about////////////// -->
+
+            <div class="content content-about">
+                <p class="title">About <%= data.organisation %>:</p>
+                <p class="value">
+                    <%= data.aboutOrganization %>
+                </p>
+                <p class="title">About the internship:</p>
+                <p class="value">
+                    <%= data.aboutInternship %>
+                </p>
+                <p class="title">No. of internship: <span class="value"><%= data.noOfInternship %></span></p>
+                <p class="title">Skills required: <span class="value"><%= data.skills %></span></p>
+                <p class="title">Who can apply:</p>
+                <p class="value">
+                    <%= data.whoCanApply %>
+                </p>
+                <p class="title">Perks:</p>
+                <p class="value">
+                    <%= data.perks %>
+                </p>
+
+                <button onclick="alert('Applied successully for the job')">Apply Now</button>
+            </div>
+
+
+
+            <!-- ----------------content-end----------- -->
+        </div>
+    </div>
+
+
+
+    <!-- ------------footer------------ -->
+    <div class="footer-head">
+            <div class="content">
+                <h2>Internships by places</h2>
+                <ul>
+                    <li>Internship in India</li>
+                    <li>Internship in Delhi</li>
+                    <li>Internship in Bangalore</li>
+                    <li>Internship in Hyderabad</li>
+                    <li>Internship in Mumbai</li>
+                    <li>Internship in Chennai</li>
+                    <li>Internship in Gurgaon</li>
+                    <li>Internship in Kolkata</li>
+                    <li>Virtual internship</li>
+                </ul>
+            </div>
+            <div class="content">
+                <h2>Internship by Stream</h2>
+                <ul>
+                    <li>Computer Science Internship</li>
+                    <li>Electronics Internship</li>
+                    <li>Mechanical Internship</li>
+                    <li>Civil Internship</li>
+                    <li>Marketing Internship</li>
+                    <li>Chemical Internship</li>
+                    <li>Finance Internship</li>
+                    <li>Summer Research Fellowship</li>
+                    <li>Campus Ambassador Program</li>
+                </ul>
+            </div>
+            <div class="content">
+                <h2>Online Winter Trainings</h2>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Android App Development</li>
+                    <li>Programming with Python</li>
+                    <li>Data Science</li>
+                    <li>Ethical Hacking</li>
+                    <li>Core Java</li>
+                    <li>Digital Marketing</li>
+                    <li>Advance Excel</li>
+                    <li>Programming with C & C++</li>
+                </ul>
+            </div>
+            <div class="content">
+                <h2>About Internshala</h2>
+                <ul>
+                    <li>About us</li>
+                    <li>We're hiring</li>
+                    <li>Hire interns for your company</li>
+                    <li>Team Diary</li>
+                    <li>Blog</li>
+                    <li>Our Services</li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+         </div>
+    
+    
+         <div class="footer-bottom">
+             <p>
+                &copy; Hello<span>Intern</span> pvt. limited
+             </p>
+         </div>
+
+    
+</body>
+</html>
